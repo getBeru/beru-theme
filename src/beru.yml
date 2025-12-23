@@ -1199,3 +1199,48 @@ tokenColors:
     settings:
       foreground: *RED
 
+# =============================================================================
+# FORCE HTML
+# =============================================================================
+
+  - scope:
+    - 	entity.name.tag.html
+    settings:
+      foreground: *PURPLECHANGE
+
+  - scope:
+    - 	entity.other.attribute-name.html
+    settings:
+      foreground: *STRINGCOLOR
+
+  - scope:
+    - 	punctuation.separator.key-value.html
+    settings:
+      foreground: *FG
+
+  - scope:
+    - 	punctuation.definition.string.begin.html
+    - 	punctuation.definition.string.end.html
+    settings:
+      foreground: *YELLOW
+
+  - scope:
+    - 	string.quoted.double.html
+    settings:
+      foreground: *YELLOW
+
+  - scope:
+    - 	punctuation.definition.tag.begin.html
+    - 	punctuation.definition.tag.end.html
+    settings:
+      foreground: *FG
+
+# =============================================================================
+# FORCE TYPESCRIPT
+# =============================================================================
+
+  - scope:
+    - 	keyword.operator.logical.ts
+    - 	keyword.operator.relational.ts
+    settings:
+      foreground: *FG
