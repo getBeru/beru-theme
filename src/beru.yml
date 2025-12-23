@@ -1142,7 +1142,6 @@ tokenColors:
 # FORCE CSS HIGHLIGHTING FOR CSS UNITS, AT-RULES, IMPORTANT
 # =============================================================================
 
-# CSS Units (px, em, rem, deg, s, ms, etc)
   - name: CSS Units
     scope:
     - keyword.other.unit
@@ -1244,3 +1243,40 @@ tokenColors:
     - 	keyword.operator.relational.ts
     settings:
       foreground: *FG
+
+  - scope:
+    - 	meta.object-literal.key.ts
+    - 	variable.other.readwrite.ts
+    - 		variable.other.readwrite.alias.ts
+    settings:
+      foreground: *STRINGCOLOR
+
+# =============================================================================
+# FORCE JSON
+# =============================================================================
+
+  - scope:
+    - 	punctuation.support.type.property-name.begin.json
+    - 	punctuation.support.type.property-name.end.json
+    settings:
+      foreground: *STRINGCOLOR
+
+# =============================================================================
+# FORCE YML
+# =============================================================================
+
+  - scope:
+    - 	entity.name.tag.yaml
+    settings:
+      foreground: *PURPLECHANGE
+
+  - scope:
+    - 	variable.other.alias.yaml
+    settings:
+      foreground: *STRINGCOLOR
+
+  - scope:
+    - 	string.unquoted.plain.out.yaml
+    - 	string.quoted.single.yaml
+    settings:
+      foreground: *YELLOW
