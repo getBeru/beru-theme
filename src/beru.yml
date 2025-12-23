@@ -1138,21 +1138,39 @@ tokenColors:
     settings:
       foreground: *COMMENT
 
-# Adicione na seção tokenColors:
+# =============================================================================
+# FORCE CSS HIGHLIGHTING FOR CSS UNITS, AT-RULES, IMPORTANT
+# =============================================================================
 
-  # CSS Units (px, em, rem, etc)
+# CSS Units (px, em, rem, deg, s, ms, etc)
   - name: CSS Units
     scope:
+    - keyword.other.unit
+    - constant.other.unit
     - keyword.other.unit.css
     - keyword.other.unit.scss
-    - constant.numeric.css
-    - constant.numeric.scss
-    - keyword.other.unit.percentage.css
-    - keyword.other.unit.px.css
+    - keyword.other.unit.px
+    - keyword.other.unit.deg
+    - keyword.other.unit.s
+    - keyword.other.unit.ms
+    - keyword.other.unit.em
+    - keyword.other.unit.rem
+    - keyword.other.unit.percentage
     settings:
-      foreground: *GREENCHANGE
+      foreground: *GREENCHANGE  # ou a cor que preferir
 
-  # CSS !important
+  # CSS @media, @keyframes, @import, etc
+  - name: CSS At-Rules
+    scope:
+    - keyword.control.at-rule
+    - keyword.control.at-rule.media
+    - keyword.control.at-rule.media.css
+    - keyword.control.at-rule.media.scss
+    - keyword.control.at-rule.keyframes
+    - keyword.control.at-rule.import
+    settings:
+      foreground: *RED  # ou a cor que preferir
+
   - name: CSS Important
     scope:
     - keyword.other.important.css
@@ -1160,3 +1178,24 @@ tokenColors:
     settings:
       foreground: *PURPLECHANGE
       fontStyle: bold
+
+  - scope:
+    - entity.other.attribute-name.attribute.scss
+    settings:
+      foreground: *STRINGCOLOR
+
+  - scope:
+    - 	keyword.operator.scss
+    settings:
+      foreground: *FG
+
+  - scope:
+    - 	meta.attribute-selector.scss
+    settings:
+      foreground: *FG
+
+  - scope:
+    - 	entity.name.tag.reference.scss
+    settings:
+      foreground: *RED
+
