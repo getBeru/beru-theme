@@ -58,3 +58,7 @@ Sinta-se à vontade para abrir issues ou pull requests.
 
 MIT License
 O Beru segue a mesma licença permissiva do tema base.
+
+
+
+Co-authored-by: @ComunidadeFullDev <contato@fulldev.com.br>
