@@ -61,4 +61,4 @@ O Beru segue a mesma licença permissiva do tema base.
 
 
 
-Co-authored-by: @ComunidadeFullDev <contato@fulldev.com.br>
+Co-authored-by: FullDev <contato@fulldev.com.br>
